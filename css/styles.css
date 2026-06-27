@@ -218,21 +218,22 @@ a { text-decoration: none; color: inherit; }
 .grid--2 { grid-template-columns: repeat(2, 1fr); }
 
 .tile {
-  background: var(--white);
+  background: var(--pink-card);
   padding: 40px 34px;
   text-align: center;
-  box-shadow: 0 12px 26px rgba(218,140,172,.18);
+  border-radius: 22px;
+  box-shadow: 0 12px 26px rgba(218,140,172,.28);
 }
 .tile__emoji { font-size: 2.6rem; display: block; margin-bottom: 16px; }
 .tile h3 {
   font-family: var(--serif);
   font-style: italic;
   font-weight: 700;
-  color: var(--pink-deep);
+  color: var(--white);
   font-size: 1.5rem;
   margin-bottom: 12px;
 }
-.tile p { text-transform: uppercase; letter-spacing: .1em; font-size: .76rem; line-height: 1.95; }
+.tile p { text-transform: uppercase; letter-spacing: .1em; font-size: .76rem; line-height: 1.95; color: var(--white); }
 
 /* ---------- Reviews ---------- */
 .quote {
