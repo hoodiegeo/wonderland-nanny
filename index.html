@@ -4,150 +4,128 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>The Wonderland Nanny — Loving, Reliable Childcare</title>
-  <meta name="description" content="The Wonderland Nanny offers warm, trustworthy, and professional nanny care that lets your little ones flourish and gives parents peace of mind." />
+  <meta name="description" content="The Wonderland Nanny offers warm, trustworthy, and professional in-home childcare that lets your little ones flourish and gives parents peace of mind." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,900;1,9..144,500;1,9..144,600;1,9..144,700;1,9..144,900&family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="css/styles.css" />
   <link rel="icon" href="assets/logo.png" />
 </head>
 <body>
 
-  <!-- HEADER -->
-  <header class="site-header">
-    <nav class="nav">
-      <a href="index.html" class="nav__logo"><img src="assets/logo.png" alt="The Wonderland Nanny" /></a>
-      <ul class="nav__links">
-        <li><a href="index.html" class="active">Home</a></li>
-        <li><a href="services.html">Services</a></li>
-        <li><a href="pricing.html">Pricing</a></li>
-        <li><a href="reviews.html">Reviews</a></li>
-        <li><a href="contact.html">Contact</a></li>
-        <li class="nav__cta"><a href="contact.html" class="btn btn--primary">Book a Chat</a></li>
-      </ul>
-      <button class="nav__toggle" aria-label="Menu"><span></span><span></span><span></span></button>
-    </nav>
+  <!-- HEADER: centered logo + nav underneath -->
+  <header class="topbar">
+    <a href="index.html" class="topbar__logo"><img src="assets/logo.png" alt="The Wonderland Nanny" /></a>
   </header>
+  <nav class="mainnav">
+    <a href="index.html" class="active">Home</a>
+    <a href="services.html">Services</a>
+    <a href="pricing.html">Pricing</a>
+    <a href="reviews.html">Reviews</a>
+    <a href="index.html#about">About</a>
+    <a href="contact.html">Inquire</a>
+  </nav>
 
   <!-- HERO -->
-  <section class="hero">
-    <span class="hero__sparkle">✨</span>
-    <span class="hero__sparkle">⭐</span>
-    <span class="hero__sparkle">💫</span>
-    <span class="hero__sparkle">✨</span>
-    <img src="assets/logo.png" alt="The Wonderland Nanny" class="hero__logo" />
-    <h1>Where every day feels like a little adventure</h1>
-    <p>Warm, dependable, and professional childcare that helps your little ones grow, play, and thrive — while giving you complete peace of mind.</p>
-    <div class="hero__actions">
-      <a href="contact.html" class="btn btn--primary">Get in Touch</a>
-      <a href="services.html" class="btn btn--ghost">Explore Services</a>
-    </div>
+  <section class="hero ph">
+    <div class="ph__emoji">🎈🧸✨</div>
   </section>
 
-  <!-- INTRO / VALUE -->
-  <section class="section center">
-    <div class="container">
-      <span class="eyebrow">Welcome to Wonderland</span>
-      <h2 class="section-title">Childcare that feels like family</h2>
-      <p class="section-lead">Sit back and relax while your children are cared for with patience, creativity, and genuine love. From playful mornings to gentle bedtime routines, The Wonderland Nanny brings calm, structure, and a whole lot of fun to your family's day.</p>
-    </div>
-  </section>
-
-  <!-- FEATURE CARDS -->
-  <section class="section section--tint">
-    <div class="container">
-      <div class="center" style="margin-bottom:46px;">
-        <span class="eyebrow">Why Families Choose Us</span>
-        <h2 class="section-title">Care you can count on</h2>
-      </div>
-      <div class="grid grid--3">
-        <div class="card">
-          <div class="card__icon">🤍</div>
-          <h3>Trusted &amp; Vetted</h3>
-          <p>Background-checked, CPR &amp; first-aid certified, and deeply experienced. Your family's safety always comes first.</p>
+  <!-- INTRO: "We adore little ones" -->
+  <section class="section">
+    <div class="wrap">
+      <div class="feature">
+        <div class="feature__text">
+          <h1 class="display">We adore little&nbsp;ones</h1>
+          <p class="lead">Sit back &amp; relax while we care for your children like they're our own. The Wonderland Nanny is your local source for warm, dependable, and professional in-home childcare. From playful mornings to gentle bedtime routines, give us some details about your family and we'll take it from there!</p>
+          <p style="margin-top:34px;"><a href="contact.html" class="btn">Tell Us More</a></p>
         </div>
-        <div class="card">
-          <div class="card__icon">🎨</div>
-          <h3>Play with Purpose</h3>
-          <p>Crafts, games, reading, and outdoor adventures designed to spark curiosity and support healthy development.</p>
-        </div>
-        <div class="card">
-          <div class="card__icon">🗓️</div>
-          <h3>Flexible Scheduling</h3>
-          <p>Full-time, part-time, date nights, or last-minute help — we shape our care around your family's real life.</p>
+        <div class="feature__img ph">
+          <div class="ph__emoji">🌈</div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ABOUT (split) -->
+  <!-- SHOWCASE: offset pink card over a photo (All Things Care) -->
+  <section class="showcase">
+    <div class="showcase__img ph"><div class="ph__emoji">🧸</div></div>
+    <div class="showcase__card">
+      <h2 class="display display--sm">All Things Care</h2>
+      <p class="lead lead--white">There's no day quite like a Wonderland day! From crafting playful routines to nurturing every little milestone, we take care of all the details so your children can focus on being curious, joyful, and free. Inquire with us today to learn about our services, availability, and how we tailor our care to fit your family's unique needs.</p>
+      <p style="margin-top:32px;"><a href="contact.html" class="btn btn--outline">Inquire</a></p>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
   <section class="section" id="about">
-    <div class="container">
-      <div class="split">
-        <div class="split__media">🐰</div>
-        <div>
-          <span class="eyebrow">About</span>
-          <h2>Hi, I'm your Wonderland Nanny</h2>
-          <p>With years of hands-on experience caring for children of all ages, I created The Wonderland Nanny to offer families the kind of childcare I'd want for my own loved ones — warm, attentive, and wonderfully fun.</p>
-          <p>I believe every child deserves to feel safe, seen, and celebrated. Whether we're building blanket forts, practicing letters, or winding down for a nap, I bring patience, energy, and a gentle structure that helps little ones flourish.</p>
-          <p>Most of all, I want parents to feel completely at ease knowing their children are in caring, capable hands.</p>
-          <a href="contact.html" class="btn btn--primary" style="margin-top:8px;">Let's Connect</a>
+    <div class="wrap">
+      <div class="feature feature--rev">
+        <div class="feature__text">
+          <p class="kicker">About</p>
+          <h2 class="display display--sm">Meet your Wonderland Nanny</h2>
+          <p class="lead">With years of hands-on experience caring for children of all ages, I created The Wonderland Nanny to give families the kind of childcare I'd want for my own loved ones — warm, attentive, and wonderfully fun. Every child deserves to feel safe, seen, and celebrated, and every parent deserves to feel completely at ease. Background-checked, CPR &amp; first-aid certified, and endlessly patient.</p>
+          <p style="margin-top:34px;"><a href="contact.html" class="btn">Let's Connect</a></p>
+        </div>
+        <div class="feature__img ph"><div class="ph__emoji">🐰</div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHY US tiles -->
+  <section class="section center" style="background:var(--cream-deep);">
+    <div class="wrap">
+      <p class="kicker">Why Families Choose Us</p>
+      <h2 class="display display--sm">Care you can count on</h2>
+      <div class="grid grid--3" style="margin-top:48px;">
+        <div class="tile">
+          <span class="tile__emoji">🤍</span>
+          <h3>Trusted &amp; Vetted</h3>
+          <p>Background-checked, CPR &amp; first-aid certified, and deeply experienced.</p>
+        </div>
+        <div class="tile">
+          <span class="tile__emoji">🎨</span>
+          <h3>Play With Purpose</h3>
+          <p>Crafts, reading, and adventures that spark curiosity and growth.</p>
+        </div>
+        <div class="tile">
+          <span class="tile__emoji">🗓️</span>
+          <h3>Wonderfully Flexible</h3>
+          <p>Full-time, part-time, or date nights — shaped around your real life.</p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- STATS -->
-  <section class="section section--pink">
-    <div class="container">
-      <div class="stats">
-        <div class="stat"><div class="stat__num">8+</div><div class="stat__label">Years of experience</div></div>
-        <div class="stat"><div class="stat__num">50+</div><div class="stat__label">Happy families</div></div>
-        <div class="stat"><div class="stat__num">100%</div><div class="stat__label">Background checked</div></div>
-        <div class="stat"><div class="stat__num">5★</div><div class="stat__label">Average rating</div></div>
-      </div>
+  <!-- PRICING BAND (full-width image) -->
+  <section class="band ph--dark">
+    <div class="band__inner">
+      <h2 class="display display--white">Pricing</h2>
+      <p class="lead lead--white">Pricing is unique to each family and depends on a variety of factors — schedule, number of children, and the care you need. Please inquire with us to receive a personalized quote made just for you.</p>
+      <p style="margin-top:32px;"><a href="pricing.html" class="btn btn--outline">View Pricing</a></p>
     </div>
-  </section>
-
-  <!-- CTA BAND -->
-  <section class="cta-band">
-    <h2>Ready to find your family's perfect fit?</h2>
-    <p>Reach out today for a friendly, no-pressure chat about your childcare needs.</p>
-    <a href="contact.html" class="btn btn--primary">Book a Chat</a>
   </section>
 
   <!-- FOOTER -->
   <footer class="site-footer">
-    <div class="footer-grid">
-      <div class="footer-brand">
-        <img src="assets/logo.png" alt="The Wonderland Nanny" />
-        <p>Loving, reliable, and professional childcare that helps your little ones thrive.</p>
-        <div class="footer-socials">
-          <a href="#" aria-label="Instagram">📷</a>
-          <a href="#" aria-label="Facebook">📘</a>
-          <a href="#" aria-label="Email">✉️</a>
-        </div>
-      </div>
-      <div>
-        <h4>Explore</h4>
-        <ul class="footer-links">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="services.html">Services</a></li>
-          <li><a href="pricing.html">Pricing</a></li>
-          <li><a href="reviews.html">Reviews</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-      </div>
-      <div>
-        <h4>Get in Touch</h4>
-        <ul class="footer-links">
-          <li><a href="mailto:hello@thewonderlandnanny.com">hello@thewonderlandnanny.com</a></li>
-          <li><a href="tel:+10000000000">(000) 000-0000</a></li>
-          <li>Serving your local area</li>
-        </ul>
-      </div>
+    <img src="assets/logo.png" alt="The Wonderland Nanny" />
+    <div class="footer-nav">
+      <a href="index.html">Home</a>
+      <a href="services.html">Services</a>
+      <a href="pricing.html">Pricing</a>
+      <a href="reviews.html">Reviews</a>
+      <a href="contact.html">Inquire</a>
     </div>
-    <div class="footer-bottom">© 2026 The Wonderland Nanny. All rights reserved.</div>
+    <div class="footer-socials">
+      <a href="#" aria-label="Instagram">📷</a>
+      <a href="#" aria-label="Facebook">📘</a>
+      <a href="mailto:hello@thewonderlandnanny.com" aria-label="Email">✉️</a>
+    </div>
+    <div class="footer-contact">
+      hello@thewonderlandnanny.com<br>
+      (000) 000-0000 · Serving your local area
+    </div>
+    <div class="footer-copy">© 2026 The Wonderland Nanny</div>
   </footer>
 
   <script src="js/main.js"></script>

@@ -7,126 +7,76 @@
   <meta name="description" content="From full-time nannying to date-night sitting and newborn care, explore the childcare services offered by The Wonderland Nanny." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,900;1,9..144,500;1,9..144,600;1,9..144,700;1,9..144,900&family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="css/styles.css" />
   <link rel="icon" href="assets/logo.png" />
 </head>
 <body>
 
-  <header class="site-header">
-    <nav class="nav">
-      <a href="index.html" class="nav__logo"><img src="assets/logo.png" alt="The Wonderland Nanny" /></a>
-      <ul class="nav__links">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="services.html" class="active">Services</a></li>
-        <li><a href="pricing.html">Pricing</a></li>
-        <li><a href="reviews.html">Reviews</a></li>
-        <li><a href="contact.html">Contact</a></li>
-        <li class="nav__cta"><a href="contact.html" class="btn btn--primary">Book a Chat</a></li>
-      </ul>
-      <button class="nav__toggle" aria-label="Menu"><span></span><span></span><span></span></button>
-    </nav>
+  <header class="topbar">
+    <a href="index.html" class="topbar__logo"><img src="assets/logo.png" alt="The Wonderland Nanny" /></a>
   </header>
+  <nav class="mainnav">
+    <a href="index.html">Home</a>
+    <a href="services.html" class="active">Services</a>
+    <a href="pricing.html">Pricing</a>
+    <a href="reviews.html">Reviews</a>
+    <a href="index.html#about">About</a>
+    <a href="contact.html">Inquire</a>
+  </nav>
 
-  <section class="page-banner">
-    <h1>Our Services</h1>
-    <p>Thoughtful, flexible childcare shaped around your family — whatever your day looks like.</p>
+  <!-- Intro -->
+  <section class="section center">
+    <div class="wrap">
+      <p class="kicker">Our Services</p>
+      <h1 class="display">Care for every little adventure</h1>
+      <p class="lead">Thoughtful, flexible childcare shaped around your family — whatever your day looks like.</p>
+    </div>
   </section>
 
-  <section class="section">
-    <div class="container">
+  <!-- Service tiles -->
+  <section class="section" style="padding-top:0;">
+    <div class="wrap">
       <div class="grid grid--3">
-        <div class="card">
-          <div class="card__icon">☀️</div>
-          <h3>Full-Time Nanny Care</h3>
-          <p>Consistent, dedicated daily care for your children — meals, naps, activities, school runs, and all the little routines that keep your household running smoothly.</p>
-        </div>
-        <div class="card">
-          <div class="card__icon">🌙</div>
-          <h3>Part-Time &amp; After-School</h3>
-          <p>Reliable help for a few hours or a few days a week. Homework support, snacks, playtime, and a calm transition from school to home.</p>
-        </div>
-        <div class="card">
-          <div class="card__icon">💕</div>
-          <h3>Date-Night Sitting</h3>
-          <p>Enjoy your evening knowing your little ones are happy and safe. Games, bedtime stories, and gentle routines until you're home.</p>
-        </div>
-        <div class="card">
-          <div class="card__icon">🍼</div>
-          <h3>Newborn &amp; Infant Care</h3>
-          <p>Gentle, experienced support for your newest arrival — feeding, soothing, tummy time, and a reassuring hand for new parents.</p>
-        </div>
-        <div class="card">
-          <div class="card__icon">✈️</div>
-          <h3>Travel &amp; Event Care</h3>
-          <p>Need a trusted nanny for a wedding, vacation, or special occasion? I'll keep the kids entertained so you can be fully present.</p>
-        </div>
-        <div class="card">
-          <div class="card__icon">🎒</div>
-          <h3>Occasional &amp; Backup Care</h3>
-          <p>Life happens. When plans change or you need a hand last-minute, I'm here to step in with dependable, loving care.</p>
-        </div>
+        <div class="tile"><span class="tile__emoji">☀️</span><h3>Full-Time Care</h3><p>Consistent daily care — meals, naps, activities, and school runs that keep your home humming.</p></div>
+        <div class="tile"><span class="tile__emoji">🌙</span><h3>Part-Time &amp; After-School</h3><p>Reliable help a few hours or days a week, with homework support and playtime.</p></div>
+        <div class="tile"><span class="tile__emoji">💕</span><h3>Date-Night Sitting</h3><p>Enjoy your evening knowing your little ones are happy, safe, and tucked in on time.</p></div>
+        <div class="tile"><span class="tile__emoji">🍼</span><h3>Newborn &amp; Infant Care</h3><p>Gentle, experienced support for your newest arrival and a reassuring hand for new parents.</p></div>
+        <div class="tile"><span class="tile__emoji">✈️</span><h3>Travel &amp; Event Care</h3><p>A trusted nanny for weddings, vacations, and special days so you can be fully present.</p></div>
+        <div class="tile"><span class="tile__emoji">🎒</span><h3>Backup &amp; Occasional</h3><p>Life happens. When plans change, I'm here to step in with dependable, loving care.</p></div>
       </div>
     </div>
   </section>
 
-  <!-- WHAT'S INCLUDED -->
-  <section class="section section--tint">
-    <div class="container">
-      <div class="split">
-        <div>
-          <span class="eyebrow">Always Included</span>
-          <h2>More than just supervision</h2>
-          <p>Every booking comes with the care, attention, and little extras that make a real difference to your day.</p>
-          <p>🌈 &nbsp;Engaging, age-appropriate activities &amp; crafts<br>
-             📚 &nbsp;Reading, learning &amp; play that builds skills<br>
-             🥪 &nbsp;Meal &amp; snack prep for the kids<br>
-             🧸 &nbsp;Tidy-up of play areas before I leave<br>
-             📱 &nbsp;Photo &amp; activity updates for parents</p>
-          <a href="pricing.html" class="btn btn--primary" style="margin-top:8px;">See Pricing</a>
-        </div>
-        <div class="split__media">🎨</div>
-      </div>
+  <!-- Showcase: what's included -->
+  <section class="showcase showcase--rev">
+    <div class="showcase__img ph"><div class="ph__emoji">🎨</div></div>
+    <div class="showcase__card">
+      <h2 class="display display--sm">Always Included</h2>
+      <p class="lead lead--white">Every booking comes with the little extras that make a real difference — engaging age-appropriate activities and crafts, reading and play that builds skills, meal &amp; snack prep, a tidy-up of play areas before I leave, and photo updates so parents always feel close by.</p>
+      <p style="margin-top:30px;"><a href="pricing.html" class="btn btn--outline">See Pricing</a></p>
     </div>
   </section>
 
-  <section class="cta-band">
-    <h2>Not sure which option fits?</h2>
-    <p>Tell me about your family and I'll help you find the perfect arrangement.</p>
-    <a href="contact.html" class="btn btn--primary">Get in Touch</a>
+  <!-- Band CTA -->
+  <section class="band ph--dark">
+    <div class="band__inner">
+      <h2 class="display display--white">Not sure which fits?</h2>
+      <p class="lead lead--white">Tell me about your family and I'll help you find the perfect arrangement.</p>
+      <p style="margin-top:30px;"><a href="contact.html" class="btn btn--outline">Get In Touch</a></p>
+    </div>
   </section>
 
   <footer class="site-footer">
-    <div class="footer-grid">
-      <div class="footer-brand">
-        <img src="assets/logo.png" alt="The Wonderland Nanny" />
-        <p>Loving, reliable, and professional childcare that helps your little ones thrive.</p>
-        <div class="footer-socials">
-          <a href="#" aria-label="Instagram">📷</a>
-          <a href="#" aria-label="Facebook">📘</a>
-          <a href="#" aria-label="Email">✉️</a>
-        </div>
-      </div>
-      <div>
-        <h4>Explore</h4>
-        <ul class="footer-links">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="services.html">Services</a></li>
-          <li><a href="pricing.html">Pricing</a></li>
-          <li><a href="reviews.html">Reviews</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-      </div>
-      <div>
-        <h4>Get in Touch</h4>
-        <ul class="footer-links">
-          <li><a href="mailto:hello@thewonderlandnanny.com">hello@thewonderlandnanny.com</a></li>
-          <li><a href="tel:+10000000000">(000) 000-0000</a></li>
-          <li>Serving your local area</li>
-        </ul>
-      </div>
+    <img src="assets/logo.png" alt="The Wonderland Nanny" />
+    <div class="footer-nav">
+      <a href="index.html">Home</a><a href="services.html">Services</a><a href="pricing.html">Pricing</a><a href="reviews.html">Reviews</a><a href="contact.html">Inquire</a>
     </div>
-    <div class="footer-bottom">© 2026 The Wonderland Nanny. All rights reserved.</div>
+    <div class="footer-socials">
+      <a href="#" aria-label="Instagram">📷</a><a href="#" aria-label="Facebook">📘</a><a href="mailto:hello@thewonderlandnanny.com" aria-label="Email">✉️</a>
+    </div>
+    <div class="footer-contact">hello@thewonderlandnanny.com<br>(000) 000-0000 · Serving your local area</div>
+    <div class="footer-copy">© 2026 The Wonderland Nanny</div>
   </footer>
 
   <script src="js/main.js"></script>

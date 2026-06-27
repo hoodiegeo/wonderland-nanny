@@ -3,138 +3,89 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Contact — The Wonderland Nanny</title>
+  <title>Inquire — The Wonderland Nanny</title>
   <meta name="description" content="Get in touch with The Wonderland Nanny to chat about your family's childcare needs." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,900;1,9..144,500;1,9..144,600;1,9..144,700;1,9..144,900&family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="css/styles.css" />
   <link rel="icon" href="assets/logo.png" />
 </head>
 <body>
 
-  <header class="site-header">
-    <nav class="nav">
-      <a href="index.html" class="nav__logo"><img src="assets/logo.png" alt="The Wonderland Nanny" /></a>
-      <ul class="nav__links">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="services.html">Services</a></li>
-        <li><a href="pricing.html">Pricing</a></li>
-        <li><a href="reviews.html">Reviews</a></li>
-        <li><a href="contact.html" class="active">Contact</a></li>
-        <li class="nav__cta"><a href="contact.html" class="btn btn--primary">Book a Chat</a></li>
-      </ul>
-      <button class="nav__toggle" aria-label="Menu"><span></span><span></span><span></span></button>
-    </nav>
+  <header class="topbar">
+    <a href="index.html" class="topbar__logo"><img src="assets/logo.png" alt="The Wonderland Nanny" /></a>
   </header>
+  <nav class="mainnav">
+    <a href="index.html">Home</a>
+    <a href="services.html">Services</a>
+    <a href="pricing.html">Pricing</a>
+    <a href="reviews.html">Reviews</a>
+    <a href="index.html#about">About</a>
+    <a href="contact.html" class="active">Inquire</a>
+  </nav>
 
-  <section class="page-banner">
-    <h1>Let's Chat</h1>
-    <p>Tell me a little about your family and what you're looking for. I'll be in touch within 24 hours.</p>
+  <section class="section center">
+    <div class="wrap">
+      <p class="kicker">Inquire</p>
+      <h1 class="display">Let's chat</h1>
+      <p class="lead">Tell me a little about your family and what you're looking for. I'll be in touch within 24 hours.</p>
+    </div>
   </section>
 
-  <section class="section">
-    <div class="container">
+  <section class="section" style="padding-top:0;">
+    <div class="wrap">
       <div class="contact-grid">
-        <div class="contact-info">
-          <span class="eyebrow">Get in Touch</span>
-          <h2 style="margin-bottom:16px;">I'd love to hear from you</h2>
-          <p>Whether you have a quick question or you're ready to book, reach out any way that's easiest for you.</p>
-
-          <div class="contact-info__item">
-            <div class="ic">✉️</div>
-            <div><strong>Email</strong><span><a href="mailto:hello@thewonderlandnanny.com">hello@thewonderlandnanny.com</a></span></div>
-          </div>
-          <div class="contact-info__item">
-            <div class="ic">📞</div>
-            <div><strong>Phone</strong><span><a href="tel:+10000000000">(000) 000-0000</a></span></div>
-          </div>
-          <div class="contact-info__item">
-            <div class="ic">📍</div>
-            <div><strong>Service Area</strong><span>Serving your local area &amp; surrounding towns</span></div>
-          </div>
-          <div class="contact-info__item">
-            <div class="ic">🕑</div>
-            <div><strong>Availability</strong><span>Monday–Sunday, flexible hours</span></div>
-          </div>
+        <div>
+          <h2 class="display display--sm">I'd love to hear from you</h2>
+          <p class="lead">Whether you have a quick question or you're ready to book, reach out any way that's easiest.</p>
+          <ul class="contact-list">
+            <li><strong>Email</strong><a href="mailto:hello@thewonderlandnanny.com">hello@thewonderlandnanny.com</a></li>
+            <li><strong>Phone</strong><a href="tel:+10000000000">(000) 000-0000</a></li>
+            <li><strong>Service Area</strong>Serving your local area &amp; surrounding towns</li>
+            <li><strong>Availability</strong>Monday–Sunday · Flexible hours</li>
+          </ul>
         </div>
 
         <form class="form" id="contact-form">
           <div class="form-row">
-            <div class="field">
-              <label for="name">Your Name</label>
-              <input type="text" id="name" name="name" placeholder="Jane Doe" required />
-            </div>
-            <div class="field">
-              <label for="phone">Phone</label>
-              <input type="tel" id="phone" name="phone" placeholder="(000) 000-0000" />
-            </div>
+            <div class="field"><label for="name">Your Name</label><input type="text" id="name" name="name" placeholder="Jane Doe" required /></div>
+            <div class="field"><label for="phone">Phone</label><input type="tel" id="phone" name="phone" placeholder="(000) 000-0000" /></div>
           </div>
-          <div class="field">
-            <label for="email">Email</label>
-            <input type="email" id="email" name="email" placeholder="jane@email.com" required />
-          </div>
+          <div class="field"><label for="email">Email</label><input type="email" id="email" name="email" placeholder="jane@email.com" required /></div>
           <div class="form-row">
-            <div class="field">
-              <label for="service">Service Needed</label>
+            <div class="field"><label for="service">Service Needed</label>
               <select id="service" name="service">
-                <option>Full-Time Nanny Care</option>
+                <option>Full-Time Care</option>
                 <option>Part-Time / After-School</option>
                 <option>Date-Night Sitting</option>
                 <option>Newborn &amp; Infant Care</option>
                 <option>Travel &amp; Event Care</option>
-                <option>Occasional / Backup Care</option>
+                <option>Backup / Occasional Care</option>
               </select>
             </div>
-            <div class="field">
-              <label for="children">Number of Children</label>
-              <select id="children" name="children">
-                <option>1</option><option>2</option><option>3</option><option>4+</option>
-              </select>
+            <div class="field"><label for="children">Number of Children</label>
+              <select id="children" name="children"><option>1</option><option>2</option><option>3</option><option>4+</option></select>
             </div>
           </div>
-          <div class="field">
-            <label for="message">Tell Me About Your Family</label>
-            <textarea id="message" name="message" placeholder="Ages of your children, schedule you're hoping for, anything you'd like me to know..."></textarea>
-          </div>
-          <button type="submit" class="btn btn--primary">Send Message</button>
-          <p class="form__note">I'll get back to you within 24 hours. 🐰</p>
+          <div class="field"><label for="message">Tell Me About Your Family</label><textarea id="message" name="message" placeholder="Ages of your children, the schedule you're hoping for, anything you'd like me to know..."></textarea></div>
+          <button type="submit" class="btn">Send Message</button>
+          <p class="form__note">I'll get back to you within 24 hours.</p>
         </form>
       </div>
     </div>
   </section>
 
   <footer class="site-footer">
-    <div class="footer-grid">
-      <div class="footer-brand">
-        <img src="assets/logo.png" alt="The Wonderland Nanny" />
-        <p>Loving, reliable, and professional childcare that helps your little ones thrive.</p>
-        <div class="footer-socials">
-          <a href="#" aria-label="Instagram">📷</a>
-          <a href="#" aria-label="Facebook">📘</a>
-          <a href="#" aria-label="Email">✉️</a>
-        </div>
-      </div>
-      <div>
-        <h4>Explore</h4>
-        <ul class="footer-links">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="services.html">Services</a></li>
-          <li><a href="pricing.html">Pricing</a></li>
-          <li><a href="reviews.html">Reviews</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-      </div>
-      <div>
-        <h4>Get in Touch</h4>
-        <ul class="footer-links">
-          <li><a href="mailto:hello@thewonderlandnanny.com">hello@thewonderlandnanny.com</a></li>
-          <li><a href="tel:+10000000000">(000) 000-0000</a></li>
-          <li>Serving your local area</li>
-        </ul>
-      </div>
+    <img src="assets/logo.png" alt="The Wonderland Nanny" />
+    <div class="footer-nav">
+      <a href="index.html">Home</a><a href="services.html">Services</a><a href="pricing.html">Pricing</a><a href="reviews.html">Reviews</a><a href="contact.html">Inquire</a>
     </div>
-    <div class="footer-bottom">© 2026 The Wonderland Nanny. All rights reserved.</div>
+    <div class="footer-socials">
+      <a href="#" aria-label="Instagram">📷</a><a href="#" aria-label="Facebook">📘</a><a href="mailto:hello@thewonderlandnanny.com" aria-label="Email">✉️</a>
+    </div>
+    <div class="footer-contact">hello@thewonderlandnanny.com<br>(000) 000-0000 · Serving your local area</div>
+    <div class="footer-copy">© 2026 The Wonderland Nanny</div>
   </footer>
 
   <script src="js/main.js"></script>

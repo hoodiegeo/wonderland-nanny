@@ -7,67 +7,61 @@
   <meta name="description" content="Simple, transparent pricing for nanny and childcare services with The Wonderland Nanny." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,900;1,9..144,500;1,9..144,600;1,9..144,700;1,9..144,900&family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="css/styles.css" />
   <link rel="icon" href="assets/logo.png" />
 </head>
 <body>
 
-  <header class="site-header">
-    <nav class="nav">
-      <a href="index.html" class="nav__logo"><img src="assets/logo.png" alt="The Wonderland Nanny" /></a>
-      <ul class="nav__links">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="services.html">Services</a></li>
-        <li><a href="pricing.html" class="active">Pricing</a></li>
-        <li><a href="reviews.html">Reviews</a></li>
-        <li><a href="contact.html">Contact</a></li>
-        <li class="nav__cta"><a href="contact.html" class="btn btn--primary">Book a Chat</a></li>
-      </ul>
-      <button class="nav__toggle" aria-label="Menu"><span></span><span></span><span></span></button>
-    </nav>
+  <header class="topbar">
+    <a href="index.html" class="topbar__logo"><img src="assets/logo.png" alt="The Wonderland Nanny" /></a>
   </header>
+  <nav class="mainnav">
+    <a href="index.html">Home</a>
+    <a href="services.html">Services</a>
+    <a href="pricing.html" class="active">Pricing</a>
+    <a href="reviews.html">Reviews</a>
+    <a href="index.html#about">About</a>
+    <a href="contact.html">Inquire</a>
+  </nav>
 
-  <section class="page-banner">
-    <h1>Pricing</h1>
-    <p>Simple, transparent rates with no surprises. Every family is unique — these are starting points we can tailor to you.</p>
+  <section class="section center">
+    <div class="wrap">
+      <p class="kicker">Pricing</p>
+      <h1 class="display">Simple &amp; transparent</h1>
+      <p class="lead">Every family is unique — these are starting points we can tailor to you. No surprises, ever.</p>
+    </div>
   </section>
 
-  <section class="section">
-    <div class="container">
+  <section class="section" style="padding-top:0;">
+    <div class="wrap">
       <div class="grid grid--3">
-        <div class="price-card">
-          <h3>Occasional Care</h3>
-          <div class="price-card__price">$25<span>/hour</span></div>
-          <p class="price-card__desc">Perfect for date nights and last-minute help.</p>
+        <div class="tier">
+          <h3>Occasional</h3>
+          <div class="tier__price">$25<span>/hr</span></div>
           <ul>
             <li>One child included</li>
             <li>Evenings &amp; weekends</li>
             <li>Bedtime routines</li>
             <li>4-hour minimum</li>
           </ul>
-          <a href="contact.html" class="btn btn--ghost">Book Now</a>
+          <a href="contact.html" class="btn">Book Now</a>
         </div>
-
-        <div class="price-card price-card--featured">
-          <span class="price-card__tag">Most Popular</span>
+        <div class="tier tier--featured">
           <h3>Part-Time</h3>
-          <div class="price-card__price">$22<span>/hour</span></div>
-          <p class="price-card__desc">Regular weekly care for busy families.</p>
+          <div class="tier__price">$22<span>/hr</span></div>
           <ul>
             <li>Up to two children</li>
             <li>Set weekly schedule</li>
             <li>Activities &amp; meal prep</li>
             <li>School pickups included</li>
-            <li>Photo updates for parents</li>
+            <li>Photo updates</li>
           </ul>
-          <a href="contact.html" class="btn btn--primary">Get Started</a>
+          <a href="contact.html" class="btn btn--outline">Get Started</a>
         </div>
-
-        <div class="price-card">
+        <div class="tier">
           <h3>Full-Time</h3>
-          <div class="price-card__price">Custom</div>
-          <p class="price-card__desc">Dedicated daily care, built around you.</p>
+          <div class="tier__price">Custom</div>
           <ul>
             <li>Two or more children</li>
             <li>Weekly or monthly rate</li>
@@ -75,51 +69,31 @@
             <li>Priority scheduling</li>
             <li>Tailored care plan</li>
           </ul>
-          <a href="contact.html" class="btn btn--ghost">Request a Quote</a>
+          <a href="contact.html" class="btn">Request Quote</a>
         </div>
       </div>
-
-      <p class="center section-lead" style="margin:40px auto 0;">Rates may vary based on the number of children, schedule, and specific care needs. Reach out for a personalized quote — I'm always happy to find an arrangement that works for your family.</p>
+      <p class="lead center" style="margin:44px auto 0; max-width:62ch;">Rates may vary based on the number of children, schedule, and specific care needs. Reach out for a personalized quote — I'm always happy to find an arrangement that works for your family.</p>
     </div>
   </section>
 
-  <section class="cta-band">
-    <h2>Let's build a plan that fits your family</h2>
-    <p>Every quote is personalized and pressure-free. Tell me what you need and I'll take care of the rest.</p>
-    <a href="contact.html" class="btn btn--primary">Request a Quote</a>
+  <section class="band ph--dark">
+    <div class="band__inner">
+      <h2 class="display display--white">Let's build your plan</h2>
+      <p class="lead lead--white">Every quote is personalized and pressure-free. Tell me what you need and I'll take care of the rest.</p>
+      <p style="margin-top:30px;"><a href="contact.html" class="btn btn--outline">Request A Quote</a></p>
+    </div>
   </section>
 
   <footer class="site-footer">
-    <div class="footer-grid">
-      <div class="footer-brand">
-        <img src="assets/logo.png" alt="The Wonderland Nanny" />
-        <p>Loving, reliable, and professional childcare that helps your little ones thrive.</p>
-        <div class="footer-socials">
-          <a href="#" aria-label="Instagram">📷</a>
-          <a href="#" aria-label="Facebook">📘</a>
-          <a href="#" aria-label="Email">✉️</a>
-        </div>
-      </div>
-      <div>
-        <h4>Explore</h4>
-        <ul class="footer-links">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="services.html">Services</a></li>
-          <li><a href="pricing.html">Pricing</a></li>
-          <li><a href="reviews.html">Reviews</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-      </div>
-      <div>
-        <h4>Get in Touch</h4>
-        <ul class="footer-links">
-          <li><a href="mailto:hello@thewonderlandnanny.com">hello@thewonderlandnanny.com</a></li>
-          <li><a href="tel:+10000000000">(000) 000-0000</a></li>
-          <li>Serving your local area</li>
-        </ul>
-      </div>
+    <img src="assets/logo.png" alt="The Wonderland Nanny" />
+    <div class="footer-nav">
+      <a href="index.html">Home</a><a href="services.html">Services</a><a href="pricing.html">Pricing</a><a href="reviews.html">Reviews</a><a href="contact.html">Inquire</a>
     </div>
-    <div class="footer-bottom">© 2026 The Wonderland Nanny. All rights reserved.</div>
+    <div class="footer-socials">
+      <a href="#" aria-label="Instagram">📷</a><a href="#" aria-label="Facebook">📘</a><a href="mailto:hello@thewonderlandnanny.com" aria-label="Email">✉️</a>
+    </div>
+    <div class="footer-contact">hello@thewonderlandnanny.com<br>(000) 000-0000 · Serving your local area</div>
+    <div class="footer-copy">© 2026 The Wonderland Nanny</div>
   </footer>
 
   <script src="js/main.js"></script>
